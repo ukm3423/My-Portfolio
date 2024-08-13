@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials-id'
         GITHUB_CREDENTIALS_ID = 'github-credentials-id'
-        DOCKER_IMAGE_NAME = 'umeshkumarchamp/docker-react-app'
+        DOCKER_IMAGE_NAME = 'umeshkumarchamp/my-portfolio'
         NODE_VERSION = '20.x'
     }
 
