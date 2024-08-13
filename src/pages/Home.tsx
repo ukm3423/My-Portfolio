@@ -88,7 +88,7 @@ const Home: React.FC = () => {
             </a>
           </div>
           <div className="flex-1 mt-4 md:mt-0 flex justify-center">
-            <img src="https://avatars.githubusercontent.com/u/141232431?v=4" alt="Profile" className="w-72 h-72 md:w-80 md:h-80 rounded-full border-4 border-gray-300 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl" />
+            <img src="https://avatars.githubusercontent.com/u/141232431?v=4" alt="Profile" className="w-80 h-80 md:w-80 md:h-80 rounded-full border-4 border-gray-300 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl" />
           </div>
         </section>
 
