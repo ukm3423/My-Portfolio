@@ -75,7 +75,7 @@ const Home: React.FC = () => {
           <div className="flex-1 md:mr-8 p-6 relative">
             <div className="absolute inset-0 bg-teal-500 opacity-10 transform rotate-12 -z-10 blur-md"></div>
             <h2 className="text-xl md:text-5xl font-extrabold mb-4 text-gray-800 relative overflow-hidden">
-              <span className="writing-animation">I'm <span className="text-teal-600">Umesh Kumar</span>, Software Developer..</span>
+              <span className="writing-animation">I'm <span className="text-teal-600">Bidisha Kumari</span>, Software Developer..</span>
             </h2>
             <p className="text-gray-700 leading-relaxed text-base md:text-lg">
               Hi, I'm a Java Developer with a passion for creating robust and scalable applications. With experience in various frameworks and tools, I strive to deliver high-quality solutions and innovative ideas.
