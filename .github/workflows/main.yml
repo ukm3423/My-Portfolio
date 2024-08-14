@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # specify your Node.js version if needed
+          node-version: '22' # specify your Node.js version if needed
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
