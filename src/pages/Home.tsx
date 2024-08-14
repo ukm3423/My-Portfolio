@@ -32,7 +32,7 @@ const Home: React.FC = () => {
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 z-50 flex justify-between items-center">
         <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight font-heading">
-          <span className="text-teal-500">UMESH</span> <span className="text-gray-200">KUMAR</span>
+          <span className="text-teal-500">UMESH</span> <span className="text-gray-200">KUMAR 😎</span>
         </h1>
         <button
           className="md:hidden "
