@@ -32,7 +32,7 @@ const Home: React.FC = () => {
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 z-50 flex justify-between items-center">
         <h1 className="text-2xl md:text-3xl font-extrabold ">
-          <span className="text-teal-500">UMESH</span> <span className="text-gray-200">KUMAR 😁</span>
+          <span className="text-teal-500">UMESH</span> <span className="text-gray-200">KUMAR </span>
         </h1>
         <button
           className="md:hidden "
@@ -75,7 +75,7 @@ const Home: React.FC = () => {
           <div className="flex-1 md:mr-8 p-4 md:p-6 relative text-center md:text-left">
             <div className="absolute inset-0 bg-teal-500 opacity-10 transform rotate-12 -z-10 blur-md"></div>
             <h2 className="text-lg md:text-4xl lg:text-5xl font-extrabold mb-4 text-gray-800 relative overflow-hidden">
-              <span className="writing-animation">I'm <span className="text-teal-600">UMESH KUMAR</span>, Software Developer..</span>
+              <span className="writing-animation">I'm <span className="text-teal-600">UMESH KUMAR</span>, Software Developer</span>
             </h2>
             <p className="text-gray-700 leading-relaxed text-sm md:text-base lg:text-lg mx-auto md:mx-0">
               Hi, I'm Umesh Kumar, a Java Developer with a passion for creating robust and scalable applications. I completed my Master of Computer Applications (MCA) in 2023 and have since been dedicated to expanding my knowledge and skills in software development.
