@@ -7,7 +7,7 @@ const App: React.FC = () => (
   <Router>
     {/* <Navbar/> */}
     <Routes>
-      <Route path="/My-Portfolio" element={<Home />} />
+      <Route path="/portfolio" element={<Home />} />
       
       {/* <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects />} />
