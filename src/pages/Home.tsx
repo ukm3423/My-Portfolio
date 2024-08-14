@@ -31,8 +31,8 @@ const Home: React.FC = () => {
     <div className="">
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 z-50 flex justify-between items-center">
-        <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight font-heading">
-          <span className="text-teal-500">BIDISHA</span> <span className="text-gray-200">MAM 👩‍🎓</span>
+        <h1 className="text-2xl md:text-3xl font-extrabold ">
+          <span className="text-teal-500">UMESH</span> <span className="text-gray-200">KUMAR 😁</span>
         </h1>
         <button
           className="md:hidden "
@@ -71,26 +71,29 @@ const Home: React.FC = () => {
 
       <main className="pt-10"> {/* Adjust top padding if needed */}
 
-        <section id="about" className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-200 p-8 mb-4 pt-16 relative overflow-hidden">
-          <div className="flex-1 md:mr-8 p-6 relative">
+        <section id="about" className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-200 p-4 md:p-8 mb-4 pt-16 relative overflow-hidden">
+          <div className="flex-1 md:mr-8 p-4 md:p-6 relative text-center md:text-left">
             <div className="absolute inset-0 bg-teal-500 opacity-10 transform rotate-12 -z-10 blur-md"></div>
-            <h2 className="text-xl md:text-5xl font-extrabold mb-4 text-gray-800 relative overflow-hidden">
-              <span className="writing-animation">I'm <span className="text-teal-600">Bidisha Kumari</span>, Software Developer..</span>
+            <h2 className="text-lg md:text-4xl lg:text-5xl font-extrabold mb-4 text-gray-800 relative overflow-hidden">
+              <span className="writing-animation">I'm <span className="text-teal-600">UMESH KUMAR</span>, Software Developer..</span>
             </h2>
-            <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-              Hi, I'm a Java Developer with a passion for creating robust and scalable applications. With experience in various frameworks and tools, I strive to deliver high-quality solutions and innovative ideas.
+            <p className="text-gray-700 leading-relaxed text-sm md:text-base lg:text-lg mx-auto md:mx-0">
+              Hi, I'm Umesh Kumar, a Java Developer with a passion for creating robust and scalable applications. I completed my Master of Computer Applications (MCA) in 2023 and have since been dedicated to expanding my knowledge and skills in software development.
+              <br /><br />
+              My expertise includes various frameworks and tools, and I strive to deliver high-quality solutions and innovative ideas. I am enthusiastic about solving complex problems and contributing to projects that drive technological advancements.
             </p>
-
             <a href="/path/to/your-resume.pdf" download="Umesh-Kumar-Resume.pdf">
-              <button className="mt-6 px-4 py-2 bg-teal-600 text-white font-semibold rounded-md shadow-lg hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300">
-                Download Resume
+              <button className="mt-4 md:mt-6 px-4 py-2 bg-teal-600 text-white font-semibold rounded-md shadow-lg hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300">
+                Download CV
               </button>
             </a>
           </div>
-          <div className="flex-1 mt-4 md:mt-0 flex justify-center">
-            <img src="https://avatars.githubusercontent.com/u/141232431?v=4" alt="Profile" className="w-80 h-80 md:w-80 md:h-80 rounded-full border-4 border-gray-300 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl" />
+          <div className="flex-1  md:mt-0 flex justify-center">
+            <img src="https://avatars.githubusercontent.com/u/141232431?v=4" alt="Profile" className="w-80 h-80 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full border-4 border-gray-300 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl" />
           </div>
         </section>
+
+
 
 
 
