@@ -7,7 +7,7 @@ pipeline {
         DOCKER_IMAGE_NAME = 'umeshkumarchamp/my-portfolio'
         NODE_VERSION = '20.x'
         NETLIFY_AUTH_TOKEN = 'netlify-auth-token-id'
-        NETLIFY_SITE_NAME = 'ukm' // Optional: You can specify a desired site name
+        NETLIFY_SITE_NAME = 'umeshkumarchamp' 
     }
 
     stages {
@@ -19,19 +19,26 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                script {
-                    bat 'yarn install'
+                // Use NodeJS installation
+                // tool name: 'NodeJS', type: 'NodeJSInstallation'
+                script {    
+                    bat 'npm install'
                 }
             }
         }
 
         stage('Build Application') {
             steps {
-                script {
-                    bat 'yarn build'
-                }
+                bat 'npm run build' // Adjust this if you use a different build command
             }
         }
+
+        // stage('Run Tests') {
+        //     steps {
+        //         // Run tests using npm
+        //         bat 'npm test'
+        //     }
+        // }
 
         stage('Create or Retrieve Netlify Site') {
             steps {
@@ -56,6 +63,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
+                    // Build Docker image
                     bat '''
                         docker build -t %DOCKER_IMAGE_NAME% .
                     '''
@@ -66,8 +74,12 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
+                    // Log in to Docker Hub
                     withDockerRegistry([credentialsId: "$DOCKER_CREDENTIALS_ID", url: 'https://index.docker.io/v1/']) {
-                        bat 'docker push %DOCKER_IMAGE_NAME%'
+                        // Push Docker image to Docker Hub
+                        bat '''
+                            docker push %DOCKER_IMAGE_NAME%
+                        '''
                     }
                 }
             }
@@ -86,6 +98,7 @@ pipeline {
 
     post {
         always {
+            // Clean up Docker images
             bat 'docker system prune -af'
         }
     }
