@@ -6,8 +6,8 @@ pipeline {
         GITHUB_CREDENTIALS_ID = 'github-credentials-id'
         DOCKER_IMAGE_NAME = 'umeshkumarchamp/my-portfolio'
         NODE_VERSION = '20.x'
-        NETLIFY_AUTH_TOKEN = 'netlify-auth-token-id'
-        NETLIFY_SITE_NAME = 'umeshkumarchamp' 
+        NETLIFY_AUTH_TOKEN = credentials('netlify-auth-token-id')
+        NETLIFY_SITE_NAME = 'ukm' 
     }
 
     stages {
