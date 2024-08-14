@@ -6,8 +6,9 @@ pipeline {
         GITHUB_CREDENTIALS_ID = 'github-credentials-id'
         DOCKER_IMAGE_NAME = 'umeshkumarchamp/my-portfolio'
         NODE_VERSION = '20.x'
-        NETLIFY_AUTH_TOKEN = credentials('netlify-auth-token-id')
+        NETLIFY_AUTH_TOKEN = credentials('netlify-auth-token-id')  // Securely fetching the token
         NETLIFY_SITE_NAME = 'ukm'
+        NETLIFY_TEAM_ID = 'umeshkumarchamp'  // Replace this with your actual Team ID
     }
 
     stages {
@@ -38,9 +39,9 @@ pipeline {
                 script {
                     bat 'npm install -g netlify-cli'
 
-                    // Create a new Netlify site without specifying the team ID
+                    // Create a new Netlify site with specified team ID
                     def siteInfo = bat(script: '''
-                        netlify sites:create --name %NETLIFY_SITE_NAME% --auth=%NETLIFY_AUTH_TOKEN% --json
+                        netlify sites:create --name %NETLIFY_SITE_NAME% --auth=%NETLIFY_AUTH_TOKEN% --team=%NETLIFY_TEAM_ID% --json
                     ''', returnStdout: true).trim()
                     
                     def siteId = readJSON(text: siteInfo).site_id
