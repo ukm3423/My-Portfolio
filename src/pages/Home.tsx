@@ -44,7 +44,7 @@ const Home: React.FC = () => {
         <nav className="hidden md:flex space-x-4">
           <a href="#about" className="hover:underline font-semibold">About</a>
           <a href="#projects" className="hover:underline font-semibold">Projects</a>
-          <a href="#contact" className="hover:underline font-semibold">Contact Us</a>
+          <a href="#contact" className="hover:underline font-semibold">Contact</a>
         </nav>
       </header>
 
